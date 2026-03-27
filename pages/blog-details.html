@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly - Freelancer Template</title>
+<link rel="icon" type="image/png" href="../assets/images/brush-solid.png">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<div class="nav-wrapper">
+
+<!-- Logo -->
+<div class="logo">
+    <img src="../assets/images/brush-solid.png" alt="logo">
+    <span>Freelancer</span>
+</div>
+<!-- Hamburger -->
+<button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- Navigation -->
+<nav class="nav-menu">
+
+<ul>
+
+<li class="dropdown">
+<a href="#">Home
+<span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="../pages/index.html">Home Freelancer</a></li>
+<li><a href="../pages/home2.html">Home Agency</a></li>
+</ul>
+
+</li>
+
+<li><a href="../pages/portfolio.html">Portfolio</a></li>
+
+<li><a href="../pages/services.html">Services</a></li>
+
+<li><a href="../pages/pricing.html">Pricing</a></li>
+
+<li><a href="../pages/blog.html">Blog</a></li>
+
+<li><a href="../pages/about.html">About</a></li>
+
+<li><a href="../pages/contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Actions -->
+<div class="nav-actions">
+
+<button id="themeToggle" class="icon-btn">
+<i class="fa-solid fa-sun"></i>
+</button>
+
+<button id="rtlToggle" class="icon-btn">
+<i class="fa-solid fa-language"></i>
+</button>
+
+<a href="../pages/login.html" class="btn-login">Hire Me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+<section class="blog-details-hero">
+
+<div class="hero-overlay"></div>
+
+<div class="container">
+
+<div class="blog-details-content">
+
+<div class="breadcrumb">
+
+<a href="index.html">Home</a>
+<span>/</span>
+
+<a href="blog.html">Blog</a>
+<span>/</span>
+
+<span>Article</span>
+
+</div>
+
+<span class="blog-category">Street Art</span>
+
+<h1>
+How Street Art Transforms Urban Spaces
+</h1>
+
+<p class="blog-meta">
+
+<span>By Artist</span>
+<span>•</span>
+<span>June 15, 2025</span>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="blog-article-section">
+
+<div class="container">
+
+<div class="blog-article">
+
+<p class="article-intro">
+Street art has evolved from underground graffiti into a respected
+form of public art. Today, murals are used to transform urban
+spaces, tell powerful stories, and inspire communities.
+</p>
+
+<h2>The Rise of Street Art</h2>
+
+<p>
+Over the past two decades, street art has grown into a global
+movement. Cities around the world now celebrate murals as
+cultural landmarks that bring color and identity to neighborhoods.
+</p>
+
+<img src="https://images.pexels.com/photos/10875042/pexels-photo-10875042.jpeg" alt="Street Art Mural">
+
+<p>
+Artists collaborate with businesses, communities, and
+organizations to create meaningful artwork that connects
+people with their surroundings.
+</p>
+
+<!-- Quote Block -->
+
+<div class="article-quote">
+
+<p>
+"Murals are more than paint on walls — they are stories
+that belong to the community."
+</p>
+
+</div>
+
+<h2>Creative Process Behind a Mural</h2>
+
+<p>
+Every mural begins with an idea. The artist sketches concepts,
+selects colors, and plans the composition carefully to ensure
+the final artwork fits the environment perfectly.
+</p>
+
+<p>
+From preparation to the final brushstroke, each stage of the
+process contributes to creating a piece that can inspire
+people for years.
+</p>
+
+<img src="https://images.pexels.com/photos/2119706/pexels-photo-2119706.jpeg" alt="Mural Painting">
+
+</div>
+
+</div>
+
+</section>
+<section class="author-section">
+
+<div class="container">
+
+<div class="author-box">
+
+<!-- Author Image -->
+<div class="author-image">
+<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+</div>
+
+<!-- Author Content -->
+<div class="author-content">
+
+<h3>John Artist</h3>
+
+<p>
+John is a professional mural artist with over 10 years of
+experience creating large-scale murals for brands,
+restaurants, and community spaces around the world.
+</p>
+
+<div class="author-social">
+
+<a href="#">Instagram</a>
+<a href="#">Twitter</a>
+<a href="#">LinkedIn</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="related-posts-section">
+
+<div class="container">
+
+<div class="section-header">
+<h2>Related Articles</h2>
+<p>Explore more stories and insights from the blog.</p>
+</div>
+
+<div class="related-posts-grid">
+
+<!-- Post 1 -->
+<div class="related-post-card">
+
+<div class="post-image">
+<img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=900" alt="">
+<span class="post-category">Street Art</span>
+</div>
+
+<div class="post-content">
+<h3>How Murals Transform City Walls</h3>
+<a href="blog-details.html">Read Article →</a>
+</div>
+
+</div>
+
+
+<!-- Post 2 -->
+<div class="related-post-card">
+
+<div class="post-image">
+<img src="https://images.pexels.com/photos/2119706/pexels-photo-2119706.jpeg" alt="">
+<span class="post-category">Mural Projects</span>
+</div>
+
+<div class="post-content">
+<h3>The Creative Process Behind Large Murals</h3>
+<a href="blog-details.html">Read Article →</a>
+</div>
+
+</div>
+
+
+<!-- Post 3 -->
+<div class="related-post-card">
+
+<div class="post-image">
+<img src="https://images.pexels.com/photos/6222866/pexels-photo-6222866.jpeg" alt="">
+<span class="post-category">Tips</span>
+</div>
+
+<div class="post-content">
+<h3>Tips for Designing Eye-Catching Murals</h3>
+<a href="blog-details.html">Read Article →</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="comments-section">
+
+<div class="container">
+
+<!-- Section Title -->
+<div class="comments-header">
+<h2>Comments</h2>
+<p>Join the discussion and share your thoughts.</p>
+</div>
+
+<!-- Comment List -->
+<div class="comments-list">
+
+<!-- Comment 1 -->
+<div class="comment-item">
+
+<div class="comment-avatar">
+<img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+</div>
+
+<div class="comment-content">
+
+<h4>Sarah Johnson</h4>
+<span class="comment-date">June 18, 2025</span>
+
+<p>
+This mural project is amazing! I love how street art
+can bring life to urban spaces.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Comment 2 -->
+<div class="comment-item">
+
+<div class="comment-avatar">
+<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+</div>
+
+<div class="comment-content">
+
+<h4>Michael Lee</h4>
+<span class="comment-date">June 20, 2025</span>
+
+<p>
+Great article! The creative process behind murals
+is truly inspiring.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Comment Form -->
+
+<div class="comment-form-box">
+
+<h3>Leave a Comment</h3>
+
+<form class="comment-form">
+
+<div class="form-row">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+</div>
+
+<textarea placeholder="Write your comment..." required></textarea>
+
+<button type="submit">Post Comment</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- About -->
+<div class="footer-about">
+
+<h3 class="footer-logo">MuralArtist</h3>
+
+<p>
+Transforming walls into powerful visual stories.
+Specializing in large-scale murals for brands,
+communities, and creative spaces.
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-behance"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+<!-- Quick Links -->
+<div class="footer-links">
+
+<h4>Quick Links</h4>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- Services -->
+<div class="footer-links">
+
+<h4>Services</h4>
+
+<ul>
+<li><a href="#">Public Murals</a></li>
+<li><a href="#">Commercial Murals</a></li>
+<li><a href="#">Restaurant Murals</a></li>
+<li><a href="#">Office Murals</a></li>
+<li><a href="#">Custom Art</a></li>
+</ul>
+
+</div>
+
+<!-- Newsletter -->
+<div class="footer-newsletter">
+
+<h4>Newsletter</h4>
+
+<p>
+Subscribe to receive updates about new murals
+and upcoming art projects.
+</p>
+
+<form class="newsletter-form">
+
+<input type="email" placeholder="Enter your email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="footer-bottom">
+
+<p>
+© 2026 MuralArtist. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly - Freelancer Template</title>
+<link rel="icon" type="image/png" href="../assets/images/brush-solid.png">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<div class="nav-wrapper">
+
+<!-- Logo -->
+<div class="logo">
+    <img src="../assets/images/brush-solid.png" alt="logo">
+    <span>Freelancer</span>
+</div>
+
+<!-- Hamburger -->
+<button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- Navigation -->
+<nav class="nav-menu">
+
+<ul>
+
+<li class="dropdown">
+<a href="#">Home
+<span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="../pages/index.html">Home Freelancer</a></li>
+<li><a href="../pages/home2.html">Home Agency</a></li>
+</ul>
+
+</li>
+
+<li><a href="../pages/portfolio.html">Portfolio</a></li>
+
+<li><a href="../pages/services.html">Services</a></li>
+
+<li><a href="../pages/pricing.html">Pricing</a></li>
+
+<li><a href="../pages/blog.html">Blog</a></li>
+
+<li><a href="../pages/about.html">About</a></li>
+
+<li><a href="../pages/contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Actions -->
+<div class="nav-actions">
+
+<button id="themeToggle" class="icon-btn">
+<i class="fa-solid fa-sun"></i>
+</button>
+
+<button id="rtlToggle" class="icon-btn">
+<i class="fa-solid fa-language"></i>
+</button>
+
+<a href="../pages/login.html" class="btn-login">Hire Me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+<section class="home2-hero">
+
+<div class="hero-overlay"></div>
+
+<div class="container">
+
+<div class="hero-grid">
+
+<!-- Hero Content -->
+<div class="hero-content">
+
+<span class="hero-badge">Freelance Creative Studio</span>
+
+<h1>
+Transforming Walls Into
+<span>Powerful Art Stories</span>
+</h1>
+
+<p>
+I create large-scale murals and creative wall art that
+turn ordinary spaces into unforgettable experiences.
+</p>
+
+<div class="hero-buttons">
+
+<a href="portfolio.html" class="hero-btn-primary">
+View Portfolio
+</a>
+
+<a href="contact.html" class="hero-btn-outline">
+Start a Project
+</a>
+
+</div>
+
+<!-- Stats -->
+<div class="hero-stats">
+
+<div class="stat">
+<h3>120+</h3>
+<p>Murals</p>
+</div>
+
+<div class="stat">
+<h3>80+</h3>
+<p>Clients</p>
+</div>
+
+<div class="stat">
+<h3>10+</h3>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Hero Image -->
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=900">
+
+<div class="floating-card">
+
+<h4>New Project</h4>
+<p>Restaurant Wall Mural</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="home2-services">
+
+<div class="container">
+
+<!-- Section Header -->
+<div class="services-header">
+
+<span class="section-tag">Services</span>
+
+<h2>Creative Services I Provide</h2>
+
+<p>
+From concept design to large-scale murals, I help brands,
+businesses, and communities transform spaces through art.
+</p>
+
+</div>
+
+
+<!-- Services Grid -->
+
+<div class="services-grid">
+
+<!-- Card 1 -->
+<div class="service-card">
+
+<div class="service-icon">
+🎨
+</div>
+
+<h3>Mural Design</h3>
+
+<p>
+Custom mural concepts designed to transform
+walls into visually powerful art pieces.
+</p>
+
+<a href="services.html" class="service-btn">
+Learn More →
+</a>
+
+</div>
+
+
+<!-- Card 2 -->
+<div class="service-card">
+
+<div class="service-icon">
+🏢
+</div>
+
+<h3>Commercial Murals</h3>
+
+<p>
+Creative brand-focused murals for cafes,
+restaurants, offices, and retail spaces.
+</p>
+
+<a href="services.html" class="service-btn">
+Learn More →
+</a>
+
+</div>
+
+
+<!-- Card 3 -->
+<div class="service-card">
+
+<div class="service-icon">
+🌆
+</div>
+
+<h3>Street Art</h3>
+
+<p>
+Urban murals that reflect culture,
+community identity, and storytelling.
+</p>
+
+<a href="services.html" class="service-btn">
+Learn More →
+</a>
+
+</div>
+
+
+<!-- Card 4 -->
+<div class="service-card">
+
+<div class="service-icon">
+🖌️
+</div>
+
+<h3>Custom Wall Art</h3>
+
+<p>
+Unique artistic wall designs for homes,
+studios, creative spaces, and interiors.
+</p>
+
+<a href="services.html" class="service-btn">
+Learn More →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="home2-portfolio">
+
+<div class="container">
+
+<!-- Section Header -->
+<div class="portfolio-header">
+
+<span class="section-tag">Portfolio</span>
+
+<h2>Featured Art Projects</h2>
+
+<p>
+A selection of recent murals and creative wall art
+projects designed for brands and communities.
+</p>
+
+</div>
+
+
+<!-- Portfolio Grid -->
+
+<div class="portfolio-grid">
+
+<!-- Item 1 -->
+<div class="portfolio-card">
+
+<img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=900">
+
+<div class="portfolio-overlay">
+
+<span class="portfolio-category">Street Art</span>
+
+<h3>Urban Colors</h3>
+
+<a href="portfolio-details.html">View Project →</a>
+
+</div>
+
+</div>
+
+
+<!-- Item 2 -->
+<div class="portfolio-card">
+
+<img src="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?w=900">
+
+<div class="portfolio-overlay">
+
+<span class="portfolio-category">Restaurant</span>
+
+<h3>Cafe Wall Design</h3>
+
+<a href="portfolio-details.html">View Project →</a>
+
+</div>
+
+</div>
+
+
+<!-- Item 3 -->
+<div class="portfolio-card">
+
+<img src="https://images.pexels.com/photos/2119706/pexels-photo-2119706.jpeg">
+
+<div class="portfolio-overlay">
+
+<span class="portfolio-category">Community</span>
+
+<h3>City Culture</h3>
+
+<a href="portfolio-details.html">View Project →</a>
+
+</div>
+
+</div>
+
+
+<!-- Item 4 -->
+<div class="portfolio-card">
+
+<img src="https://images.pexels.com/photos/6222866/pexels-photo-6222866.jpeg">
+
+<div class="portfolio-overlay">
+
+<span class="portfolio-category">Office</span>
+
+<h3>Creative Workspace</h3>
+
+<a href="portfolio-details.html">View Project →</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Button -->
+
+<div class="portfolio-btn-wrap">
+
+<a href="portfolio.html" class="portfolio-btn">
+View Full Portfolio
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section class="home2-about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<!-- Image Side -->
+
+<div class="about-images">
+
+<img src="https://images.pexels.com/photos/12375020/pexels-photo-12375020.jpeg" class="main-img">
+
+<img src="https://images.pexels.com/photos/16840772/pexels-photo-16840772.jpeg" class="small-img">
+
+<div class="experience-badge">
+
+<h3>10+</h3>
+<p>Years Experience</p>
+
+</div>
+
+</div>
+
+
+<!-- Content Side -->
+
+<div class="about-content">
+
+<span class="section-tag">About Artist</span>
+
+<h2>
+Turning Empty Walls Into
+Creative Masterpieces
+</h2>
+
+<p>
+I’m a freelance mural artist specializing in large-scale
+murals that transform public spaces into vibrant art.
+My work blends creativity, storytelling, and urban
+culture to create meaningful visual experiences.
+</p>
+
+<div class="about-stats">
+
+<div class="stat">
+<h3>120+</h3>
+<p>Murals</p>
+</div>
+
+<div class="stat">
+<h3>80+</h3>
+<p>Clients</p>
+</div>
+
+<div class="stat">
+<h3>45+</h3>
+<p>Cities</p>
+</div>
+
+</div>
+
+<div class="about-buttons">
+
+<a href="about.html" class="about-btn-primary">
+Discover My Story
+</a>
+
+<a href="contact.html" class="about-btn-outline">
+Hire Me
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="process-section">
+
+<div class="container">
+
+<!-- Section Header -->
+<div class="process-header">
+
+<span class="section-tag">Process</span>
+
+<h2>How I Create Your Mural</h2>
+
+<p>
+A simple and collaborative process that turns ideas
+into powerful visual art.
+</p>
+
+</div>
+
+<!-- Timeline -->
+
+<div class="process-timeline">
+
+<!-- Step 1 -->
+<div class="process-step">
+
+<div class="step-number">01</div>
+
+<div class="step-content">
+
+<h3>Consultation</h3>
+
+<p>
+We discuss your vision, location, brand style,
+and creative ideas for the mural.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Step 2 -->
+<div class="process-step">
+
+<div class="step-number">02</div>
+
+<div class="step-content">
+
+<h3>Concept Design</h3>
+
+<p>
+I create sketches and visual concepts
+to plan the final mural design.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Step 3 -->
+<div class="process-step">
+
+<div class="step-number">03</div>
+
+<div class="step-content">
+
+<h3>Mural Creation</h3>
+
+<p>
+The artwork is painted on-site using
+professional mural techniques.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Step 4 -->
+<div class="process-step">
+
+<div class="step-number">04</div>
+
+<div class="step-content">
+
+<h3>Final Delivery</h3>
+
+<p>
+The mural is completed, sealed,
+and ready to transform your space.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="testimonials3-section">
+
+<div class="container">
+
+<!-- Section Header -->
+<div class="testimonials3-header">
+
+<span class="section-tag">Testimonials</span>
+
+<h2>What Clients Say</h2>
+
+<p>
+Real feedback from clients who trusted me
+to transform their spaces with creative murals.
+</p>
+
+</div>
+
+<!-- Slider -->
+
+<div class="testimonial3-slider">
+
+<button class="slider-btn prev">&#10094;</button>
+
+<div class="testimonial3-wrapper">
+
+<div class="testimonial3-card active">
+
+<img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+<p>
+"The mural completely transformed our café.
+Customers love taking photos with it!"
+</p>
+
+<h4>Sarah Johnson</h4>
+
+<span>Café Owner</span>
+
+<div class="stars">★★★★★</div>
+
+</div>
+
+
+<div class="testimonial3-card">
+
+<img src="https://randomuser.me/api/portraits/men/41.jpg">
+
+<p>
+"Amazing creativity and professionalism.
+Our office wall looks incredible."
+</p>
+
+<h4>Michael Lee</h4>
+
+<span>Startup Founder</span>
+
+<div class="stars">★★★★★</div>
+
+</div>
+
+
+<div class="testimonial3-card">
+
+<img src="https://randomuser.me/api/portraits/women/32.jpg">
+
+<p>
+"The mural became a landmark in our community.
+Highly recommended!"
+</p>
+
+<h4>Emily Carter</h4>
+
+<span>Community Manager</span>
+
+<div class="stars">★★★★★</div>
+
+</div>
+
+</div>
+
+<button class="slider-btn next">&#10095;</button>
+
+</div>
+
+</div>
+
+</section>
+<section class="home2-cta-section">
+
+<div class="cta-shape shape1"></div>
+<div class="cta-shape shape2"></div>
+
+<div class="container">
+
+<div class="home2-cta-content">
+
+<h2>Ready to Bring Your Vision to Life?</h2>
+
+<p>
+Let's collaborate to create stunning mural artwork
+that transforms your space and tells your story.
+</p>
+
+<div class="cta-buttons">
+
+<a href="#" class="cta-btn primary-btn">
+Start a Project
+</a>
+
+<a href="#" class="cta-btn secondary-btn">
+View Portfolio
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- About -->
+<div class="footer-about">
+
+<h3 class="footer-logo">MuralArtist</h3>
+
+<p>
+Transforming walls into powerful visual stories.
+Specializing in large-scale murals for brands,
+communities, and creative spaces.
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-behance"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+<!-- Quick Links -->
+<div class="footer-links">
+
+<h4>Quick Links</h4>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- Services -->
+<div class="footer-links">
+
+<h4>Services</h4>
+
+<ul>
+<li><a href="#">Public Murals</a></li>
+<li><a href="#">Commercial Murals</a></li>
+<li><a href="#">Restaurant Murals</a></li>
+<li><a href="#">Office Murals</a></li>
+<li><a href="#">Custom Art</a></li>
+</ul>
+
+</div>
+
+<!-- Newsletter -->
+<div class="footer-newsletter">
+
+<h4>Newsletter</h4>
+
+<p>
+Subscribe to receive updates about new murals
+and upcoming art projects.
+</p>
+
+<form class="newsletter-form">
+
+<input type="email" placeholder="Enter your email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="footer-bottom">
+
+<p>
+© 2026 MuralArtist. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

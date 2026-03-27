@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly - Freelancer Template</title>
+<link rel="icon" type="image/png" href="../assets/images/brush-solid.png">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<div class="nav-wrapper">
+
+<!-- Logo -->
+<div class="logo">
+    <img src="../assets/images/brush-solid.png" alt="logo">
+    <span>Freelancer</span>
+</div>
+<!-- Hamburger -->
+<button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- Navigation -->
+<nav class="nav-menu">
+
+<ul>
+
+<li class="dropdown">
+<a href="#">Home
+<span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="../pages/index.html">Home Freelancer</a></li>
+<li><a href="../pages/home2.html">Home Agency</a></li>
+</ul>
+
+</li>
+
+<li><a href="../pages/portfolio.html">Portfolio</a></li>
+
+<li><a href="../pages/services.html">Services</a></li>
+
+<li><a href="../pages/pricing.html">Pricing</a></li>
+
+<li><a href="../pages/blog.html">Blog</a></li>
+
+<li><a href="../pages/about.html">About</a></li>
+
+<li><a href="../pages/contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Actions -->
+<div class="nav-actions">
+
+<button id="themeToggle" class="icon-btn">
+<i class="fa-solid fa-sun"></i>
+</button>
+
+<button id="rtlToggle" class="icon-btn">
+<i class="fa-solid fa-language"></i>
+</button>
+
+<a href="../pages/login.html" class="btn-login">Hire Me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+<section class="about-hero">
+
+<div class="hero-overlay"></div>
+
+<div class="container">
+
+<div class="about-hero-content">
+
+<div class="breadcrumb">
+
+<a href="index.html">Home</a>
+<span>/</span>
+<span>About</span>
+
+</div>
+
+<h1>About The Artist</h1>
+
+<p>
+Discover the story, inspiration, and creative journey behind
+the murals that transform spaces into powerful visual experiences.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="about-story-section">
+
+<div class="container">
+
+<div class="about-story-grid">
+
+<!-- Image -->
+<div class="about-image">
+
+<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900" alt="Artist">
+
+<div class="experience-badge">
+<h3>10+</h3>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+<!-- Content -->
+<div class="about-content">
+
+<h2>Transforming Walls Into Living Art</h2>
+
+<p>
+I’m a freelance mural artist passionate about transforming blank
+spaces into vibrant visual stories. My work blends creativity,
+culture, and bold colors to create murals that inspire communities
+and bring spaces to life.
+</p>
+
+<p>
+From urban street art to large-scale commercial murals, my goal is
+to design artwork that captures attention and leaves a lasting
+impression.
+</p>
+
+<!-- Stats -->
+<div class="about-stats">
+
+<div class="stat">
+<h3>120+</h3>
+<p>Murals</p>
+</div>
+
+<div class="stat">
+<h3>40+</h3>
+<p>Cities</p>
+</div>
+
+<div class="stat">
+<h3>85+</h3>
+<p>Clients</p>
+</div>
+
+</div>
+
+<!-- Buttons -->
+<div class="about-buttons">
+
+<a href="portfolio.html" class="btn-primary">View Portfolio</a>
+<a href="contact.html" class="btn-outline">Hire Me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="artist-skills-section">
+
+<div class="container">
+
+<div class="skills-header">
+
+<h2>Creative Expertise</h2>
+
+<p>
+Years of experience in mural art, creative design, and large-scale
+visual storytelling across brands, communities, and public spaces.
+</p>
+
+</div>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<h3>Mural Design</h3>
+
+<div class="skill-bar">
+<div class="skill-progress" data-progress="95"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>Street Art</h3>
+
+<div class="skill-bar">
+<div class="skill-progress" data-progress="90"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>Wall Illustration</h3>
+
+<div class="skill-bar">
+<div class="skill-progress" data-progress="85"></div>
+</div>
+
+</div>
+
+<div class="skill-card">
+
+<h3>Concept Design</h3>
+
+<div class="skill-bar">
+<div class="skill-progress" data-progress="88"></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="artist-timeline-section">
+
+<div class="container">
+
+<div class="timeline-header">
+
+<h2>My Creative Journey</h2>
+
+<p>
+A journey of creativity, passion, and large-scale mural projects
+that transformed public spaces and brands.
+</p>
+
+</div>
+
+<div class="timeline">
+
+<!-- Item 1 -->
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="timeline-year">2016</span>
+
+<h3>Started Freelance Journey</h3>
+
+<p>
+Began working as a freelance mural artist creating street
+art and community murals.
+</p>
+
+</div>
+
+</div>
+
+<!-- Item 2 -->
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="timeline-year">2018</span>
+
+<h3>First Commercial Project</h3>
+
+<p>
+Collaborated with restaurants and cafes to create large
+interior mural artwork.
+</p>
+
+</div>
+
+</div>
+
+<!-- Item 3 -->
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="timeline-year">2021</span>
+
+<h3>International Projects</h3>
+
+<p>
+Expanded mural work across multiple cities and
+international brand collaborations.
+</p>
+
+</div>
+
+</div>
+
+<!-- Item 4 -->
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="timeline-year">2024</span>
+
+<h3>Creative Studio Launch</h3>
+
+<p>
+Launched a dedicated creative studio for mural design,
+public art, and creative consulting.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="awards-section">
+
+<div class="container">
+
+<div class="awards-header">
+
+<h2>Awards & Achievements</h2>
+
+<p>
+Recognition from creative communities, brands, and art organizations
+for impactful mural designs and public art projects.
+</p>
+
+</div>
+
+<div class="awards-grid">
+
+<div class="award-card">
+
+<div class="award-icon">
+<i class="fa-solid fa-award"></i>
+</div>
+
+<h3>Best Urban Artist</h3>
+
+<span>Creative Art Awards 2023</span>
+
+<p>
+Awarded for innovative large-scale mural designs in urban spaces.
+</p>
+
+</div>
+
+
+<div class="award-card">
+
+<div class="award-icon">
+<i class="fa-solid fa-medal"></i>
+</div>
+
+<h3>Public Art Recognition</h3>
+
+<span>City Culture Council</span>
+
+<p>
+Recognized for contributing murals that transformed community areas.
+</p>
+
+</div>
+
+
+<div class="award-card">
+
+<div class="award-icon">
+<i class="fa-solid fa-star"></i>
+</div>
+
+<h3>Top Creative Freelancer</h3>
+
+<span>Freelance Design Network</span>
+
+<p>
+Selected among top freelance mural artists globally.
+</p>
+
+</div>
+
+
+<div class="award-card">
+
+<div class="award-icon">
+<i class="fa-solid fa-trophy"></i>
+</div>
+
+<h3>Brand Collaboration Award</h3>
+
+<span>Global Creative Summit</span>
+
+<p>
+Honored for creative collaborations with international brands.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="clients-section">
+
+<div class="container">
+
+<div class="clients-header">
+
+<h2>Trusted By Creative Brands</h2>
+
+<p>
+I’ve collaborated with brands, startups, and communities
+to create impactful mural art and creative projects.
+</p>
+
+</div>
+
+<div class="clients-grid">
+
+<div class="client-logo">
+<img src="https://dummyimage.com/160x80/000/fff&text=Brand+1">
+</div>
+
+<div class="client-logo">
+<img src="https://dummyimage.com/160x80/000/fff&text=Brand+2">
+</div>
+
+<div class="client-logo">
+<img src="https://dummyimage.com/160x80/000/fff&text=Brand+3">
+</div>
+
+<div class="client-logo">
+<img src="https://dummyimage.com/160x80/000/fff&text=Brand+4">
+</div>
+
+<div class="client-logo">
+<img src="https://dummyimage.com/160x80/000/fff&text=Brand+5">
+</div>
+
+<div class="client-logo">
+<img src="https://dummyimage.com/160x80/000/fff&text=Brand+6">
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="hire-cta-section">
+
+<div class="container">
+
+<div class="hire-cta-content">
+
+<h2>Let’s Create Something Amazing Together</h2>
+
+<p>
+Looking for a creative freelancer to bring your ideas to life?
+Let’s collaborate and transform your vision into stunning visual art.
+</p>
+
+<div class="cta-buttons">
+
+<a href="contact.html" class="cta-primary-btn">
+Start a Project
+</a>
+
+<a href="portfolio.html" class="cta-outline-btn">
+View My Work
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- About -->
+<div class="footer-about">
+
+<h3 class="footer-logo">MuralArtist</h3>
+
+<p>
+Transforming walls into powerful visual stories.
+Specializing in large-scale murals for brands,
+communities, and creative spaces.
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-behance"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+<!-- Quick Links -->
+<div class="footer-links">
+
+<h4>Quick Links</h4>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- Services -->
+<div class="footer-links">
+
+<h4>Services</h4>
+
+<ul>
+<li><a href="#">Public Murals</a></li>
+<li><a href="#">Commercial Murals</a></li>
+<li><a href="#">Restaurant Murals</a></li>
+<li><a href="#">Office Murals</a></li>
+<li><a href="#">Custom Art</a></li>
+</ul>
+
+</div>
+
+<!-- Newsletter -->
+<div class="footer-newsletter">
+
+<h4>Newsletter</h4>
+
+<p>
+Subscribe to receive updates about new murals
+and upcoming art projects.
+</p>
+
+<form class="newsletter-form">
+
+<input type="email" placeholder="Enter your email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="footer-bottom">
+
+<p>
+© 2026 MuralArtist. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

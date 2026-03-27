@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly - Freelancer Template</title>
+<link rel="icon" type="image/png" href="../assets/images/brush-solid.png">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<div class="nav-wrapper">
+
+<!-- Logo -->
+<div class="logo">
+    <img src="../assets/images/brush-solid.png" alt="logo">
+    <span>Freelancer</span>
+</div>
+
+<!-- Hamburger -->
+<button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- Navigation -->
+<nav class="nav-menu">
+
+<ul>
+
+<li class="dropdown">
+<a href="#">Home
+<span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="../pages/index.html">Home Freelancer</a></li>
+<li><a href="../pages/home2.html">Home Agency</a></li>
+</ul>
+
+</li>
+
+<li><a href="../pages/portfolio.html">Portfolio</a></li>
+
+<li><a href="../pages/services.html">Services</a></li>
+
+<li><a href="../pages/pricing.html">Pricing</a></li>
+
+<li><a href="../pages/blog.html">Blog</a></li>
+
+<li><a href="../pages/about.html">About</a></li>
+
+<li><a href="../pages/contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Actions -->
+<div class="nav-actions">
+
+<button id="themeToggle" class="icon-btn">
+<i class="fa-solid fa-sun"></i>
+</button>
+
+<button id="rtlToggle" class="icon-btn">
+<i class="fa-solid fa-language"></i>
+</button>
+
+<a href="../pages/login.html" class="btn-login">Hire Me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+<section class="blog-hero">
+
+<div class="blog-hero-overlay"></div>
+
+<div class="container">
+
+<div class="blog-hero-content">
+
+<div class="breadcrumb">
+<a href="index.html">Home</a>
+<span>/</span>
+<span>Blog</span>
+</div>
+
+<h1>Creative Mural & Street Art Blog</h1>
+
+<p>
+Insights, inspiration, and behind-the-scenes stories
+from my mural projects around the world.
+</p>
+
+<!-- Search bar -->
+<div class="blog-search">
+
+<input type="text" placeholder="Search articles...">
+
+<button>
+Search
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="blog-posts-section">
+
+<div class="container">
+
+<div class="blog-grid">
+
+<!-- Blog Card 1 -->
+<div class="blog-card">
+
+<div class="blog-image">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900">
+<span class="blog-category">Street Art</span>
+</div>
+
+<div class="blog-content">
+
+<div class="blog-meta">
+<span>By Artist</span>
+<span>May 12, 2025</span>
+</div>
+
+<h3>How Street Art Transforms Urban Spaces</h3>
+
+<p>
+Discover how murals and street art can turn ordinary
+walls into powerful creative statements.
+</p>
+
+<a href="blog-details.html" class="blog-readmore">Read More →</a>
+
+</div>
+
+</div>
+
+
+<!-- Blog Card 2 -->
+<div class="blog-card">
+
+<div class="blog-image">
+<img src="https://images.pexels.com/photos/2119706/pexels-photo-2119706.jpeg">
+<span class="blog-category">Mural Projects</span>
+</div>
+
+<div class="blog-content">
+
+<div class="blog-meta">
+<span>By Artist</span>
+<span>May 18, 2025</span>
+</div>
+
+<h3>The Creative Process Behind Large Murals</h3>
+
+<p>
+A behind-the-scenes look at how large-scale murals
+are designed and brought to life.
+</p>
+
+<a href="blog-details.html" class="blog-readmore">Read More →</a>
+
+</div>
+
+</div>
+
+
+<!-- Blog Card 3 -->
+<div class="blog-card">
+
+<div class="blog-image">
+<img src="https://images.pexels.com/photos/14073866/pexels-photo-14073866.jpeg">
+<span class="blog-category">Tips</span>
+</div>
+
+<div class="blog-content">
+
+<div class="blog-meta">
+<span>By Artist</span>
+<span>May 25, 2025</span>
+</div>
+
+<h3>Tips for Designing Eye-Catching Murals</h3>
+
+<p>
+Learn professional tips to design murals that
+grab attention and inspire communities.
+</p>
+
+<a href="blog-details.html" class="blog-readmore">Read More →</a>
+
+</div>
+
+</div>
+
+
+<!-- Blog Card 2 -->
+<div class="blog-card">
+
+<div class="blog-image">
+<img src="https://images.pexels.com/photos/2009885/pexels-photo-2009885.jpeg">
+<span class="blog-category">Mural urbon</span>
+</div>
+
+<div class="blog-content">
+
+<div class="blog-meta">
+<span>By Artist</span>
+<span>March 11, 2025</span>
+</div>
+
+<h3>The Creative Process Behind Large Murals</h3>
+
+<p>
+A behind-the-scenes look at how large-scale murals
+are designed and brought to life.
+</p>
+
+<a href="blog-details.html" class="blog-readmore">Read More →</a>
+
+</div>
+
+</div>
+
+<!-- Blog Card 2 -->
+<div class="blog-card">
+
+<div class="blog-image">
+<img src="https://images.pexels.com/photos/8037440/pexels-photo-8037440.jpeg">
+<span class="blog-category">City walls</span>
+</div>
+
+<div class="blog-content">
+
+<div class="blog-meta">
+<span>By Artist</span>
+<span>May 13, 2025</span>
+</div>
+
+<h3>The Creative Process Behind Large Murals</h3>
+
+<p>
+A behind-the-scenes look at how large-scale murals
+are designed and brought to life.
+</p>
+
+<a href="blog-details.html" class="blog-readmore">Read More →</a>
+
+</div>
+
+</div>
+<!-- Blog Card 4 -->
+<div class="blog-card">
+
+<div class="blog-image">
+<img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=900">
+<span class="blog-category">Behind Scenes</span>
+</div>
+
+<div class="blog-content">
+
+<div class="blog-meta">
+<span>By Artist</span>
+<span>June 2, 2025</span>
+</div>
+
+<h3>Behind the Scenes of a Restaurant Mural</h3>
+
+<p>
+See how concept sketches become stunning
+restaurant murals that enhance atmosphere.
+</p>
+
+<a href="blog-details.html" class="blog-readmore">Read More →</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="newsletter-section">
+
+<div class="container">
+
+<div class="newsletter-box">
+
+<h2>Join My Creative Newsletter</h2>
+
+<p>
+Get mural inspiration, art tips, and behind-the-scenes
+stories delivered directly to your inbox.
+</p>
+
+<form class="newsletter-form">
+
+<input type="email" placeholder="Enter your email address" required>
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="newsletter-shape shape1"></div>
+<div class="newsletter-shape shape2"></div>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- About -->
+<div class="footer-about">
+
+<h3 class="footer-logo">MuralArtist</h3>
+
+<p>
+Transforming walls into powerful visual stories.
+Specializing in large-scale murals for brands,
+communities, and creative spaces.
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-behance"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+<!-- Quick Links -->
+<div class="footer-links">
+
+<h4>Quick Links</h4>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- Services -->
+<div class="footer-links">
+
+<h4>Services</h4>
+
+<ul>
+<li><a href="#">Public Murals</a></li>
+<li><a href="#">Commercial Murals</a></li>
+<li><a href="#">Restaurant Murals</a></li>
+<li><a href="#">Office Murals</a></li>
+<li><a href="#">Custom Art</a></li>
+</ul>
+
+</div>
+
+<!-- Newsletter -->
+<div class="footer-newsletter">
+
+<h4>Newsletter</h4>
+
+<p>
+Subscribe to receive updates about new murals
+and upcoming art projects.
+</p>
+
+<form class="newsletter-form">
+
+<input type="email" placeholder="Enter your email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="footer-bottom">
+
+<p>
+© 2026 MuralArtist. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

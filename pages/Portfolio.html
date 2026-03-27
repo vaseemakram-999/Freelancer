@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly - Freelancer Template</title>
+<link rel="icon" type="image/png" href="../assets/images/brush-solid.png">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<div class="nav-wrapper">
+
+<!-- Logo -->
+<div class="logo">
+    <img src="../assets/images/brush-solid.png" alt="logo">
+    <span>Freelancer</span>
+</div>
+
+<!-- Hamburger -->
+<button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- Navigation -->
+<nav class="nav-menu">
+
+<ul>
+
+<li class="dropdown">
+<a href="#">Home
+<span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="../pages/index.html">Home Freelancer</a></li>
+<li><a href="../pages/home2.html">Home Agency</a></li>
+</ul>
+
+</li>
+
+<li><a href="../pages/portfolio.html">Portfolio</a></li>
+
+<li><a href="../pages/services.html">Services</a></li>
+
+<li><a href="../pages/pricing.html">Pricing</a></li>
+
+<li><a href="../pages/blog.html">Blog</a></li>
+
+<li><a href="../pages/about.html">About</a></li>
+
+<li><a href="../pages/contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Actions -->
+<div class="nav-actions">
+
+<button id="themeToggle" class="icon-btn">
+<i class="fa-solid fa-sun"></i>
+</button>
+
+<button id="rtlToggle" class="icon-btn">
+<i class="fa-solid fa-language"></i>
+</button>
+
+<a href="../pages/login.html" class="btn-login">Hire Me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+<!-- Portfolio Hero Section -->
+<section class="portfolio-hero">
+
+<div class="portfolio-hero-overlay"></div>
+
+<div class="container">
+
+<div class="portfolio-hero-content">
+
+<h1>My Creative Portfolio</h1>
+
+<p>
+Explore a curated collection of murals and public art projects
+created for brands, restaurants, communities, and creative spaces.
+</p>
+
+<div class="breadcrumb">
+
+<a href="index.html">Home</a>
+<span>/</span>
+<span>Portfolio</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="portfolio-cards">
+
+<div class="container">
+    <div class="gallery-header">
+<h2>Featured Murals</h2>
+
+<p>
+Explore some of my recent public art projects and large-scale murals
+created for brands, communities, and creative spaces.
+</p>
+</div>
+
+<div class="portfolio-grid">
+
+<!-- Card 1 -->
+<div class="portfolio-card street portfolio-item">
+
+<div class="portfolio-image">
+
+<img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=900">
+
+<div class="portfolio-hover">
+
+<div class="portfolio-icons">
+
+<a href="#"><i class="fa-solid fa-eye"></i></a>
+<a href="#"><i class="fa-solid fa-link"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="portfolio-info">
+
+<h4>Urban Expression</h4>
+<p>Street Art</p>
+
+</div>
+
+</div>
+
+
+<!-- Card 2 -->
+<div class="portfolio-card restaurant portfolio-item">
+
+<div class="portfolio-image">
+
+<img src="https://images.pexels.com/photos/2119706/pexels-photo-2119706.jpeg">
+
+<div class="portfolio-hover">
+
+<div class="portfolio-icons">
+
+<a href="#"><i class="fa-solid fa-eye"></i></a>
+<a href="#"><i class="fa-solid fa-link"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="portfolio-info">
+
+<h4>Restaurant Wall Art</h4>
+<p>Restaurant</p>
+
+</div>
+
+</div>
+
+
+<!-- Card 3 -->
+<div class="portfolio-card community portfolio-item">
+
+<div class="portfolio-image">
+
+<img src="https://images.pexels.com/photos/1619242/pexels-photo-1619242.jpeg">
+
+<div class="portfolio-hover">
+
+<div class="portfolio-icons">
+
+<a href="#"><i class="fa-solid fa-eye"></i></a>
+<a href="#"><i class="fa-solid fa-link"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="portfolio-info">
+
+<h4>Community Culture</h4>
+<p>Community</p>
+
+</div>
+
+</div>
+
+<!-- Card 4 -->
+<div class="portfolio-card community portfolio-item">
+
+<div class="portfolio-image">
+
+<img src="https://images.pexels.com/photos/11872594/pexels-photo-11872594.jpeg">
+
+<div class="portfolio-hover">
+
+<div class="portfolio-icons">
+
+<a href="#"><i class="fa-solid fa-eye"></i></a>
+<a href="#"><i class="fa-solid fa-link"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="portfolio-info">
+
+<h4>City Culture</h4>
+<p>City</p>
+
+</div>
+
+</div>
+
+
+<!-- Card 5 -->
+<div class="portfolio-card office portfolio-item">
+
+<div class="portfolio-image">
+
+<img src="https://images.pexels.com/photos/6222866/pexels-photo-6222866.jpeg">
+
+<div class="portfolio-hover">
+
+<div class="portfolio-icons">
+
+<a href="#"><i class="fa-solid fa-eye"></i></a>
+<a href="#"><i class="fa-solid fa-link"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="portfolio-info">
+
+<h4>Office Creativity</h4>
+<p>Office</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="portfolio-loadmore-section">
+
+<div class="container">
+
+<a href="Portfolio Details.html" class="load-more-btn">
+Load More Projects
+</a>
+
+</div>
+
+</section>
+<section class="portfolio-cta">
+
+<div class="container">
+
+<div class="cta-content">
+
+<h2>Let’s Create Something Amazing Together</h2>
+
+<p>
+Looking for a mural that transforms your space into a powerful
+visual experience? Let’s collaborate and bring your ideas to life.
+</p>
+
+<div class="cta-buttons">
+
+<a href="contact.html" class="cta-primary">Start a Project</a>
+
+<a href="services.html" class="cta-outline">View Services</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- About -->
+<div class="footer-about">
+
+<h3 class="footer-logo">MuralArtist</h3>
+
+<p>
+Transforming walls into powerful visual stories.
+Specializing in large-scale murals for brands,
+communities, and creative spaces.
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-behance"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+<!-- Quick Links -->
+<div class="footer-links">
+
+<h4>Quick Links</h4>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- Services -->
+<div class="footer-links">
+
+<h4>Services</h4>
+
+<ul>
+<li><a href="#">Public Murals</a></li>
+<li><a href="#">Commercial Murals</a></li>
+<li><a href="#">Restaurant Murals</a></li>
+<li><a href="#">Office Murals</a></li>
+<li><a href="#">Custom Art</a></li>
+</ul>
+
+</div>
+
+<!-- Newsletter -->
+<div class="footer-newsletter">
+
+<h4>Newsletter</h4>
+
+<p>
+Subscribe to receive updates about new murals
+and upcoming art projects.
+</p>
+
+<form class="newsletter-form">
+
+<input type="email" placeholder="Enter your email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="footer-bottom">
+
+<p>
+© 2026 MuralArtist. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

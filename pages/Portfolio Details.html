@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly - Freelancer Template</title>
+<link rel="icon" type="image/png" href="../assets/images/brush-solid.png">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+    <header class="header">
+
+<div class="container">
+
+<div class="nav-wrapper">
+
+<!-- Logo -->
+<div class="logo">
+    <img src="../assets/images/brush-solid.png" alt="logo">
+    <span>Freelancer</span>
+</div>
+
+<!-- Hamburger -->
+<button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- Navigation -->
+<nav class="nav-menu">
+
+<ul>
+
+<li class="dropdown">
+<a href="#">Home
+<span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="../pages/index.html">Home Freelancer</a></li>
+<li><a href="../pages/home2.html">Home Agency</a></li>
+</ul>
+
+</li>
+
+<li><a href="../pages/portfolio.html">Portfolio</a></li>
+
+<li><a href="../pages/services.html">Services</a></li>
+
+<li><a href="../pages/pricing.html">Pricing</a></li>
+
+<li><a href="../pages/blog.html">Blog</a></li>
+
+<li><a href="../pages/about.html">About</a></li>
+
+<li><a href="../pages/contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Actions -->
+<div class="nav-actions">
+
+<button id="themeToggle" class="icon-btn">
+<i class="fa-solid fa-sun"></i>
+</button>
+
+<button id="rtlToggle" class="icon-btn">
+<i class="fa-solid fa-language"></i>
+</button>
+
+<a href="../pages/login.html" class="btn-login">Hire Me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+<section class="portfolio-details-hero">
+
+<div class="hero-overlay"></div>
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="breadcrumb">
+<a href="index.html">Home</a> /
+<a href="portfolio.html">Portfolio</a> /
+<span>Urban Expression</span>
+</div>
+
+<h1>Urban Expression Mural</h1>
+
+<p>
+A vibrant large-scale mural created to transform a public wall
+into a powerful artistic landmark for the local community.
+</p>
+
+<div class="project-meta">
+
+<div class="meta-item">
+<h4>Client</h4>
+<span>City Arts Foundation</span>
+</div>
+
+<div class="meta-item">
+<h4>Location</h4>
+<span>New York, USA</span>
+</div>
+
+<div class="meta-item">
+<h4>Year</h4>
+<span>2024</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="project-gallery">
+
+<div class="container">
+
+<div class="gallery-header">
+
+<h2>Project Gallery</h2>
+
+<p>
+Explore the process and final artwork from different angles
+and stages of the mural creation.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="https://images.pexels.com/photos/6989/city-love-rainbow-nyc.jpg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="https://images.pexels.com/photos/3053859/pexels-photo-3053859.jpeg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="https://images.pexels.com/photos/31630873/pexels-photo-31630873.jpeg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="https://images.pexels.com/photos/2049408/pexels-photo-2049408.jpeg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="https://images.pexels.com/photos/33946141/pexels-photo-33946141.jpeg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="https://images.pexels.com/photos/34822667/pexels-photo-34822667.jpeg" alt="">
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="before-after-premium">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2>Before & After Transformation</h2>
+
+<p>
+See how the blank wall transformed into a vibrant
+mural through creative design and artistic execution.
+</p>
+
+</div>
+
+<div class="image-comparison">
+
+<img src="https://images.pexels.com/photos/7951938/pexels-photo-7951938.jpeg" class="img-before">
+
+<div class="img-after-wrapper">
+
+<img src="https://images.pexels.com/photos/9990204/pexels-photo-9990204.jpeg" class="img-after">
+
+</div>
+
+<div class="slider-line"></div>
+<div class="slider-button"></div>
+
+<div class="label before-label">Before</div>
+<div class="label after-label">After</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="project-description">
+
+<div class="container">
+
+<div class="project-layout">
+
+<!-- Left Content -->
+<div class="project-story">
+
+<h2>Project Story</h2>
+
+<p>
+This mural was created to transform a blank urban wall into a vibrant
+artistic landmark that reflects the culture and energy of the local
+community. The concept focused on bold colors, expressive shapes,
+and storytelling through large-scale visual elements.
+</p>
+
+<p>
+The design process included concept sketches, digital mockups, and
+collaboration with the client to ensure the final mural aligned with
+the brand identity and the surrounding architecture.
+</p>
+
+<ul class="project-highlights">
+
+<li>Large-scale outdoor mural</li>
+<li>Weather resistant paints</li>
+<li>Community inspired design</li>
+<li>Completed within 7 days</li>
+
+</ul>
+
+</div>
+
+
+<!-- Right Sidebar -->
+<div class="project-info">
+
+<h3>Project Info</h3>
+
+<div class="info-item">
+<span>Client</span>
+<strong>City Arts Foundation</strong>
+</div>
+
+<div class="info-item">
+<span>Location</span>
+<strong>New York, USA</strong>
+</div>
+
+<div class="info-item">
+<span>Surface Size</span>
+<strong>40ft × 18ft</strong>
+</div>
+
+<div class="info-item">
+<span>Completion</span>
+<strong>7 Days</strong>
+</div>
+
+<div class="info-item">
+<span>Tools Used</span>
+<strong>Spray Paint, Acrylic</strong>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="project-testimonial2">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2>Client Feedback</h2>
+
+<p>
+What the client says about the mural project and
+the creative collaboration experience.
+</p>
+
+</div>
+
+<div class="testimonial2-slider">
+
+<div class="testimonial2-card active">
+
+<div class="testimonial2-content">
+
+<p>
+"The mural completely transformed our space. The colors,
+design, and attention to detail exceeded our expectations.
+It has become a landmark for our community."
+</p>
+
+</div>
+
+<div class="testimonial2-client">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="client">
+
+<div class="client-info">
+<h4>Michael Anderson</h4>
+<span>City Arts Foundation</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="testimonial2-card">
+
+<div class="testimonial2-content">
+
+<p>
+"Working with this artist was an incredible experience.
+The mural brought life and creativity to our restaurant wall."
+</p>
+
+</div>
+
+<div class="testimonial2-client">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="client">
+
+<div class="client-info">
+<h4>Sarah Williams</h4>
+<span>Restaurant Owner</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="commission-cta">
+
+<div class="container">
+
+<div class="cta-content">
+
+<h2>Commission Your Own Mural</h2>
+
+<p>
+Ready to transform your space with a custom mural?
+Let’s collaborate and create a unique piece of art
+that reflects your brand and vision.
+</p>
+
+<div class="cta-buttons">
+
+<a href="contact.html" class="cta-primary">Start a Project</a>
+
+<a href="portfolio.html" class="cta-outline">View More Work</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- About -->
+<div class="footer-about">
+
+<h3 class="footer-logo">MuralArtist</h3>
+
+<p>
+Transforming walls into powerful visual stories.
+Specializing in large-scale murals for brands,
+communities, and creative spaces.
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-behance"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+<!-- Quick Links -->
+<div class="footer-links">
+
+<h4>Quick Links</h4>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- Services -->
+<div class="footer-links">
+
+<h4>Services</h4>
+
+<ul>
+<li><a href="#">Public Murals</a></li>
+<li><a href="#">Commercial Murals</a></li>
+<li><a href="#">Restaurant Murals</a></li>
+<li><a href="#">Office Murals</a></li>
+<li><a href="#">Custom Art</a></li>
+</ul>
+
+</div>
+
+<!-- Newsletter -->
+<div class="footer-newsletter">
+
+<h4>Newsletter</h4>
+
+<p>
+Subscribe to receive updates about new murals
+and upcoming art projects.
+</p>
+
+<form class="newsletter-form">
+
+<input type="email" placeholder="Enter your email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="footer-bottom">
+
+<p>
+© 2026 MuralArtist. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

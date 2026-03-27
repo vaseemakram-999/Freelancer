@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stackly - Freelancer Template</title>
+<link rel="icon" type="image/png" href="../assets/images/brush-solid.png">
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<div class="nav-wrapper">
+
+<!-- Logo -->
+<div class="logo">
+    <img src="../assets/images/brush-solid.png" alt="logo">
+    <span>Freelancer</span>
+</div>
+
+<!-- Hamburger -->
+<button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- Navigation -->
+<nav class="nav-menu">
+
+<ul>
+
+<li class="dropdown">
+<a href="#">Home
+<span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+</a>
+
+<ul class="dropdown-menu">
+<li><a href="../pages/index.html">Home Freelancer</a></li>
+<li><a href="../pages/home2.html">Home Agency</a></li>
+</ul>
+
+</li>
+
+<li><a href="../pages/portfolio.html">Portfolio</a></li>
+
+<li><a href="../pages/services.html">Services</a></li>
+
+<li><a href="../pages/pricing.html">Pricing</a></li>
+
+<li><a href="../pages/blog.html">Blog</a></li>
+
+<li><a href="../pages/about.html">About</a></li>
+
+<li><a href="../pages/contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Actions -->
+<div class="nav-actions">
+
+<button id="themeToggle" class="icon-btn">
+<i class="fa-solid fa-sun"></i>
+</button>
+
+<button id="rtlToggle" class="icon-btn">
+<i class="fa-solid fa-language"></i>
+</button>
+
+<a href="../pages/login.html" class="btn-login">Hire Me</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+<section class="services-hero">
+
+<div class="hero-overlay"></div>
+
+<div class="container">
+
+<div class="services-hero-content">
+
+<div class="breadcrumb">
+
+<a href="index.html">Home</a>
+<span>/</span>
+<span>Services</span>
+
+</div>
+
+<h1>Creative Services</h1>
+
+<p>
+From large-scale murals to custom artwork and creative branding,
+explore the services that help transform spaces into visual stories.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="services-grid-section">
+
+<div class="container">
+
+<div class="services-header">
+
+<h2>My Creative Services</h2>
+
+<p>
+I offer a range of creative services that transform ideas
+into powerful visual experiences.
+</p>
+
+</div>
+
+<div class="services-grid">
+
+<!-- Service 1 -->
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-paint-roller"></i>
+</div>
+
+<h3>Mural Painting</h3>
+
+<p>
+Large-scale murals designed to transform walls
+into vibrant artistic experiences.
+</p>
+
+</div>
+
+
+<!-- Service 2 -->
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-pen-nib"></i>
+</div>
+
+<h3>Custom Artwork</h3>
+
+<p>
+Unique hand-crafted illustrations and wall
+art tailored to your brand or space.
+</p>
+
+</div>
+
+
+<!-- Service 3 -->
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-lightbulb"></i>
+</div>
+
+<h3>Concept Design</h3>
+
+<p>
+Creative concepts and visual planning for
+murals, branding, and installations.
+</p>
+
+</div>
+
+
+<!-- Service 4 -->
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-building"></i>
+</div>
+
+<h3>Commercial Murals</h3>
+
+<p>
+Professional murals designed for offices,
+restaurants, and retail spaces.
+</p>
+
+</div>
+
+
+<!-- Service 5 -->
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-users"></i>
+</div>
+
+<h3>Community Projects</h3>
+
+<p>
+Public art murals that connect communities
+and create meaningful cultural spaces.
+</p>
+
+</div>
+
+
+<!-- Service 6 -->
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-brush"></i>
+</div>
+
+<h3>Creative Consulting</h3>
+
+<p>
+Professional advice and creative direction
+for art-based projects and branding.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="process-steps-section">
+
+<div class="container">
+
+<div class="process-header">
+
+<h2>How the Process Works</h2>
+
+<p>
+A simple step-by-step workflow that ensures every mural
+project is delivered with creativity and precision.
+</p>
+
+</div>
+
+<div class="process-steps">
+
+<!-- Step 1 -->
+<div class="process-step">
+
+<div class="step-number">01</div>
+
+<div class="step-icon">
+<i class="fa-solid fa-comments"></i>
+</div>
+
+<h3>Consultation</h3>
+
+<p>
+Discuss the project goals, location,
+and creative ideas for your mural.
+</p>
+
+</div>
+
+<!-- Step 2 -->
+<div class="process-step">
+
+<div class="step-number">02</div>
+
+<div class="step-icon">
+<i class="fa-solid fa-pencil-ruler"></i>
+</div>
+
+<h3>Concept Design</h3>
+
+<p>
+Create sketches and visual concepts
+that match your brand or space.
+</p>
+
+</div>
+
+<!-- Step 3 -->
+<div class="process-step">
+
+<div class="step-number">03</div>
+
+<div class="step-icon">
+<i class="fa-solid fa-paintbrush"></i>
+</div>
+
+<h3>Artwork Creation</h3>
+
+<p>
+Transform the concept into a vibrant
+hand-painted mural artwork.
+</p>
+
+</div>
+
+<!-- Step 4 -->
+<div class="process-step">
+
+<div class="step-number">04</div>
+
+<div class="step-icon">
+<i class="fa-solid fa-star"></i>
+</div>
+
+<h3>Final Delivery</h3>
+
+<p>
+Complete the project and ensure every
+detail matches the original vision.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="pricing-section">
+
+<div class="container">
+
+<div class="pricing-header">
+
+<h2>Service Packages</h2>
+
+<p>
+Choose the perfect package for your mural or creative project.
+Flexible pricing designed for brands, communities, and businesses.
+</p>
+
+</div>
+
+<div class="pricing-grid">
+
+<!-- Basic -->
+<div class="pricing-card">
+
+<h3>Basic</h3>
+
+<div class="price">$250</div>
+
+<ul>
+<li>Small Wall Artwork</li>
+<li>Concept Sketch</li>
+<li>Basic Color Design</li>
+<li>1 Revision</li>
+<li>Email Support</li>
+</ul>
+
+<a href="contact.html" class="pricing-btn">Get Started</a>
+
+</div>
+
+
+<!-- Standard -->
+<div class="pricing-card featured">
+
+<div class="popular">Most Popular</div>
+
+<h3>Standard</h3>
+
+<div class="price">$600</div>
+
+<ul>
+<li>Medium Wall Mural</li>
+<li>Custom Concept Design</li>
+<li>Premium Color Work</li>
+<li>3 Revisions</li>
+<li>Priority Support</li>
+</ul>
+
+<a href="contact.html" class="pricing-btn">Get Started</a>
+
+</div>
+
+
+<!-- Premium -->
+<div class="pricing-card">
+
+<h3>Premium</h3>
+
+<div class="price">$1200</div>
+
+<ul>
+<li>Large Scale Mural</li>
+<li>Full Custom Artwork</li>
+<li>Advanced Color & Texture</li>
+<li>Unlimited Revisions</li>
+<li>Dedicated Support</li>
+</ul>
+
+<a href="contact.html" class="pricing-btn">Get Started</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="services-testimonial1-section">
+
+<div class="container">
+
+<div class="testimonial1-header">
+
+<h2>What Clients Say</h2>
+
+<p>
+Trusted by brands, communities, and businesses
+for delivering impactful mural artwork.
+</p>
+
+</div>
+
+<div class="testimonial1-grid">
+
+<!-- Testimonial 1 -->
+<div class="testimonial1-card">
+
+<p class="testimonial1-text">
+"The mural completely transformed our restaurant space.
+Customers love the artwork and it became a huge attraction."
+</p>
+
+<div class="testimonial1-client">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+<div>
+<h4>David Miller</h4>
+<span>Restaurant Owner</span>
+</div>
+
+</div>
+
+<div class="testimonial1-stars">
+★★★★★
+</div>
+
+</div>
+
+
+<!-- Testimonial 2 -->
+<div class="testimonial1-card">
+
+<p class="testimonial1-text">
+"Amazing creativity and professionalism.
+The mural perfectly reflects our brand identity."
+</p>
+
+<div class="testimonial1-client">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+<div>
+<h4>Sophia Lee</h4>
+<span>Creative Director</span>
+</div>
+
+</div>
+
+<div class="testimonial1-stars">
+★★★★★
+</div>
+
+</div>
+
+
+<!-- Testimonial 3 -->
+<div class="testimonial1-card">
+
+<p class="testimonial1-text">
+"Our community center mural became a landmark
+thanks to the incredible artwork."
+</p>
+
+<div class="testimonial1-client">
+
+<img src="https://randomuser.me/api/portraits/men/76.jpg">
+
+<div>
+<h4>Michael Brown</h4>
+<span>Community Manager</span>
+</div>
+
+</div>
+
+<div class="testimonial1-stars">
+★★★★★
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="bsfaq-section">
+
+<div class="container">
+
+<div class="bsfaq-header">
+<h2>Frequently Asked Questions</h2>
+<p>
+Everything you need to know about our bookstore services,
+special orders, and reading programs.
+</p>
+</div>
+
+<div class="bsfaq-accordion">
+
+<!-- FAQ 1 -->
+<div class="bsfaq-item">
+<button class="bsfaq-question">
+How do special book orders work?
+<span class="bsfaq-icon">+</span>
+</button>
+
+<div class="bsfaq-answer">
+<p>
+If a title is not available in our store, we can order it directly
+from publishers and distributors. Most special orders arrive
+within a few days.
+</p>
+</div>
+</div>
+
+<!-- FAQ 2 -->
+<div class="bsfaq-item">
+<button class="bsfaq-question">
+Do you host private book clubs?
+<span class="bsfaq-icon">+</span>
+</button>
+
+<div class="bsfaq-answer">
+<p>
+Yes. We offer private book club gatherings inside our cozy
+reading space. Groups can reserve time for discussions,
+events, and themed reading nights.
+</p>
+</div>
+</div>
+
+<!-- FAQ 3 -->
+<div class="bsfaq-item">
+<button class="bsfaq-question">
+Can I request rare books?
+<span class="bsfaq-icon">+</span>
+</button>
+
+<div class="bsfaq-answer">
+<p>
+Absolutely. We collaborate with collectors and specialty
+publishers to locate rare, limited-edition, and out-of-print
+books for our customers.
+</p>
+</div>
+</div>
+
+<!-- FAQ 4 -->
+<div class="bsfaq-item">
+<button class="bsfaq-question">
+Do you offer gift subscriptions?
+<span class="bsfaq-icon">+</span>
+</button>
+
+<div class="bsfaq-answer">
+<p>
+Yes. Our curated book subscription boxes can be gifted to
+friends and family. Choose monthly or quarterly deliveries.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="hire-cta-section">
+
+<div class="cta-overlay"></div>
+
+<div class="container">
+
+<div class="hire-cta-content">
+
+<h2>Ready to Transform Your Space?</h2>
+
+<p>
+Let's create a unique mural or artwork that tells your story
+and makes your space unforgettable.
+</p>
+
+<div class="cta-buttons">
+
+<a href="contact.html" class="cta-primary">
+Start a Project
+</a>
+
+<a href="portfolio.html" class="cta-outline">
+View Portfolio
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<!-- About -->
+<div class="footer-about">
+
+<h3 class="footer-logo">MuralArtist</h3>
+
+<p>
+Transforming walls into powerful visual stories.
+Specializing in large-scale murals for brands,
+communities, and creative spaces.
+</p>
+
+<div class="footer-social">
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-behance"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+<!-- Quick Links -->
+<div class="footer-links">
+
+<h4>Quick Links</h4>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+<!-- Services -->
+<div class="footer-links">
+
+<h4>Services</h4>
+
+<ul>
+<li><a href="#">Public Murals</a></li>
+<li><a href="#">Commercial Murals</a></li>
+<li><a href="#">Restaurant Murals</a></li>
+<li><a href="#">Office Murals</a></li>
+<li><a href="#">Custom Art</a></li>
+</ul>
+
+</div>
+
+<!-- Newsletter -->
+<div class="footer-newsletter">
+
+<h4>Newsletter</h4>
+
+<p>
+Subscribe to receive updates about new murals
+and upcoming art projects.
+</p>
+
+<form class="newsletter-form">
+
+<input type="email" placeholder="Enter your email">
+
+<button type="submit">Subscribe</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="footer-bottom">
+
+<p>
+© 2026 MuralArtist. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+<script>
+document.querySelectorAll(".bsfaq-question").forEach(button => {
+
+button.addEventListener("click", function(){
+
+const item = this.parentElement;
+
+item.classList.toggle("active");
+
+});
+
+});
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
