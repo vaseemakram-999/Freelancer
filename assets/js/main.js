@@ -6,10 +6,57 @@ document.addEventListener("DOMContentLoaded", () => {
   const rtlToggle = document.getElementById("rtlToggle");
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
+  const navWrapper = document.querySelector(".nav-wrapper");
+  const navActions = document.querySelector(".nav-actions");
   const dropdownToggles = document.querySelectorAll(".dropdown > a");
+  const isPagesRoute = window.location.pathname.toLowerCase().includes("/pages/");
+  const homeHref = isPagesRoute ? "../pages/index.html" : "./pages/index.html";
 
-  const THEME_KEY = "stackly_theme";
-  const DIR_KEY = "stackly_dir";
+  document.querySelectorAll(".logo, .footer-logo").forEach((brandBlock) => {
+    if (brandBlock.tagName.toLowerCase() === "a") {
+      return;
+    }
+
+    brandBlock.setAttribute("role", "link");
+    brandBlock.setAttribute("tabindex", "0");
+    brandBlock.setAttribute("aria-label", "Go to home page");
+
+    brandBlock.addEventListener("click", (event) => {
+      if (event.target.closest("a, button, input, textarea, select, label")) {
+        return;
+      }
+      window.location.href = homeHref;
+    });
+
+    brandBlock.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        window.location.href = homeHref;
+      }
+    });
+  });
+
+  const syncMobileNavActions = () => {
+    if (!navMenu || !navActions || !navWrapper) {
+      return;
+    }
+
+    if (window.innerWidth <= 1024) {
+      if (navActions.parentElement !== navMenu) {
+        navMenu.prepend(navActions);
+      }
+      return;
+    }
+
+    if (navActions.parentElement !== navWrapper) {
+      navMenu.insertAdjacentElement("afterend", navActions);
+    }
+  };
+
+  syncMobileNavActions();
+
+  const THEME_KEY = "freelancer_theme";
+  const DIR_KEY = "freelancer_dir";
 
   const applyTheme = (theme) => {
     const isDark = theme === "dark";
@@ -124,6 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   window.addEventListener("resize", () => {
+    syncMobileNavActions();
+
     if (!hamburger || !navMenu || window.innerWidth > 1024) {
       if (navMenu) {
         navMenu.classList.remove("active");
@@ -245,6 +294,20 @@ document.addEventListener("DOMContentLoaded", () => {
         button.classList.add("active");
       });
     });
+  }
+
+  const pricingToggle = document.getElementById("pricingToggle");
+  if (pricingToggle) {
+    const pricingSection = pricingToggle.closest(".pricing-plans-section");
+    const updatePricing = () => {
+      if (!pricingSection) {
+        return;
+      }
+      pricingSection.classList.toggle("show-yearly", pricingToggle.checked);
+    };
+
+    updatePricing();
+    pricingToggle.addEventListener("change", updatePricing);
   }
 
   const comparisonSlider = document.querySelector(".image-comparison");
